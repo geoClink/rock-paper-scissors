@@ -1,4 +1,5 @@
-console.log(`Hello, World!`)
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
 
@@ -18,10 +19,8 @@ function getHumanChoice() {
     return choice;
 }
 
-function playGame() {
 
-    let humanScore = 0;
-    let computerScore = 0;
+    
     function playRound(humanChoice, computerChoice) {
 
         humanChoice = humanChoice.toLowerCase();
@@ -56,15 +55,10 @@ function playGame() {
             console.log(`The score is: Human: ${humanScore} vs Computer: ${computerScore}.`)
         }
     }
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
-    playRound(getHumanChoice(), getComputerChoice())
+    
 
      console.log(`The final score is: Human: ${humanScore} vs Computer: ${computerScore}.`)
 
     
-}
 
-playGame()
+
