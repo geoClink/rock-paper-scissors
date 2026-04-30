@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* Back-drop Container */
+#back-drop {
+    padding: 40px;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all children horizontally */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Fixed the stray semicolon here */
+    max-width: 500px;
+    width: 90%; /* Responsive on smaller screens */
+}
+
+/* Title */
+h2 {
+    font-size: 32px;
+    color: #333;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+/* Instructions */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+/* Button Group Wrapper */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* Uniform spacing between buttons */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Base Button Styles */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 0; /* Vertical padding only */
+    width: 110px;    /* Fixed width keeps buttons identical in size */
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Active/Pressed state */
+button:active, button.active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Round results display */
+#round-results {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 24px; /* Prevents layout jump when text is empty */
+    margin: 20px 0;
+    color: #222;
+}
+
+/* Score board */
+#score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 10px;
+    border-top: 2px solid #bbb;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Restart Button */
+#restart-button {
+    margin-top: 25px;
+    background-color: #f44336;
+    width: 160px; /* Slightly wider for the longer text */
+}
+
+#restart-button:hover {
+    background-color: #d32f2f;
+}
