@@ -1,3 +1,11 @@
+:root {
+    --primary-green: #4CAF50;
+    --hover-green: #45a049;
+    --danger-red: #f44336;
+    --danger-hover: #d32f2f; 
+    --bg-color: #f4f4f9;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,7 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: var(--bg-color);
 }
 
 /* Back-drop Container */
@@ -51,7 +59,11 @@ p {
 
 /* Base Button Styles */
 button {
-    background-color: #4CAF50;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--primary-green);
     border: none;
     color: white;
     padding: 12px 0; /* Vertical padding only */
@@ -63,8 +75,12 @@ button {
     border-radius: 6px;
 }
 
+button i {
+    font-size: 1.1rem;
+}
+
 button:hover {
-    background-color: #45a049;
+    background-color: var(--hover-green);
     transform: translateY(-2px); /* Subtle lift effect */
 }
 
@@ -101,10 +117,10 @@ button:active, button.active {
 /* Restart Button */
 #restart-button {
     margin-top: 25px;
-    background-color: #f44336;
+    background-color: var(--danger-red);
     width: 160px; /* Slightly wider for the longer text */
 }
 
 #restart-button:hover {
-    background-color: #d32f2f;
+    background-color: var(--danger-hover);
 }
