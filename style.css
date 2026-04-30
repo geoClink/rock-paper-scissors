@@ -114,17 +114,6 @@ button:active, button.active {
     color: #444;
 }
 
-/* Restart Button */
-#restart-button {
-    margin-top: 25px;
-    background-color: var(--danger-red);
-    width: 160px; /* Slightly wider for the longer text */
-}
-
-#restart-button:hover {
-    background-color: var(--danger-hover);
-}
-
 .modal {
     display: none;
     position: fixed;

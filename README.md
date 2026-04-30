@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/800ef9c2-8fcb-4566-88f1-992e1406d73a
+
 # Rock Paper Scissors
 
 A console-based Rock Paper Scissors game built with vanilla JavaScript as part of The Odin Project Foundations curriculum.
